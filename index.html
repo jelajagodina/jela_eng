@@ -155,8 +155,8 @@
 <body>
   <div class="card">
     <img src="jela-jagodina-logo.png" alt="Jela logo" class="logo">
-    <h1>Dobro došli na Jelin štand</h1>
-    <p class="subtitle">Unesite svoj email i prvi saznajte o specijalnim sajamskim popustima i novim kolekcijama nameštaja.</p>
+    <h1>Welcome to Jela's stand</h1>
+    <p class="subtitle">Leave your email and learn how our products can help your projects stand out in interior design.</p>
 
     <form id="contactForm" action="https://formspree.io/f/xzzypnag" method="POST">
       <input type="email" name="email" placeholder="Vaša email adresa" required>
@@ -174,7 +174,7 @@
       </div>
     </form>
 
-    <p class="note">*Vaša email adresa se koristi isključivo za obaveštenja o Jelinim ponudama i akcijama.</p>
+    <p class="note">*Your email address is used exclusively for notifications about Jela's offers and promotions.</p>
   </div>
 
   <script>
@@ -186,7 +186,7 @@
       // Provera da li je checkbox za politiku privatnosti čekiran
       const privacyCheckbox = document.querySelector('input[name="privacy_policy"]');
       if (!privacyCheckbox.checked) {
-        alert('Molimo vas da potvrdite da se slažete sa politikom privatnosti kako biste nastavili.');
+        alert('Please confirm that you agree to the privacy policy to continue.');
         return;
       }
 
@@ -199,11 +199,12 @@
 
       if (response.ok) {
         // odmah preusmeri na željeni katalog
-        window.location.href = "https://jela.rs/collection/galet/#P93";
+        window.location.href = "https://jela.rs";
       } else {
-        alert('Došlo je do greške. Pokušajte ponovo.');
+        alert('An error occurred. Try again.');
       }
     });
   </script>
 </body>
+
 </html>
